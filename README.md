@@ -1,3 +1,2 @@
 # prolog-Selected
-#Expert system 
-#we will update :D 
+Expert system is "building maintenance" or "flowers" :D
