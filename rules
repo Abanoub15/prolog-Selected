@@ -103,7 +103,7 @@ Rule 20: If color is yellow
   THEN flower is helenium
 Rule 21:If color is pink
   OR color is red 
-  AND session summer
+  AND season is summer
   AND soil is dry
   AND height is tall
   THEN flower is Weigela
@@ -112,3 +112,16 @@ Rule 22: If color is purple
   AND season is spring
   AND soil is well draining
   THEN flower is Violet
+Rule 23: If color is pink
+ OR color is white
+ AND season is autumn
+ And soil is well_drained
+THEN flower is monarda
+Rule 24: If color is white
+ AND root type is bulbs
+ AND season is spring
+ THEN flower is Tulip 
+Rule 25: If 
+ AND 
+ AND 
+ THEN  
