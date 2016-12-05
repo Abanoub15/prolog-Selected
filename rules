@@ -101,3 +101,14 @@ Rule 20: If color is yellow
   AND soil is alluvial loam
   AND root type is roots
   THEN flower is helenium
+Rule 21:If color is pink
+  OR color is red 
+  AND session summer
+  AND soil is dry
+  AND height is tall
+  THEN flower is Weigela
+Rule 22: If color is purple
+  AND lifetype is annual
+  AND season is spring
+  AND soil is well draining
+  THEN flower is Violet
