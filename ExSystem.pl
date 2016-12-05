@@ -1,0 +1,301 @@
+%-----facts------%
+
+
+
+
+%-----rules------%
+problem(X):-
+	types_flowers(X).
+types_flowers(X):-
+	anemone(X),
+	azatea(X),
+	begonia(X),
+	rose(X),
+	freesia(X),
+	narcissus(X),
+	cameuia(X),
+	lily(X),
+	iris(X),
+	chrysanthemum(X),
+	dahlia(X),
+	white_lily(X),
+	helenium(X),
+	violet(X),
+	weigela(X),
+	sunflower(X) .
+%Anemone%
+anemone(X):-
+	life_type(X),
+	root_type(X),
+	color(X).
+life_type(X):-
+	perennial(X).
+perennial(X):-
+	life_cycle(X).
+life_cycle(X):-
+	more_than_one_year(X).
+root_type(X):-
+	root(X).
+color(X):-
+	white(X);
+	red(X);
+	blue(X);
+	yellow(X).
+%Azatea%
+azatea(X):-
+	season(X),
+	color(X).
+season(X):-
+	winter(X).
+color(X):-
+	white(X);
+	red(X);
+	pink(X).
+%begonia%
+begonia(X):-
+	soil(X),
+	life_type(X),
+	height(X).
+height(X):-
+	small(X).
+small(X):-
+	size_more_10(X),
+	size_less_50(X).
+soil(X):-
+	loose(X);
+	fertile(X);
+	rich(X).
+life_type(X):-
+	annual(X).
+annual(X):-
+	life_cycle(X).
+life_cycle(X):-
+	one_year(X).
+%rose%
+rose(X):-
+	perfumed(X),
+	color(X),
+	root_type(X),
+	life_type(X),
+	soil(X).
+soil(X):-
+	well_drained(X).
+color(X):-
+	pink(X);
+	white(X);
+	red(X);
+	yellow(X).
+root_type(X):-
+	root(X).
+life_type(X):-
+	perennial(X).
+perennial(X):-
+	life_cycle(X).
+life_cycle(X):-
+	more_than_one_year(X).
+%iris%
+iris(X):-
+	root_type(X),
+	season(X),
+	life_type(X),
+	color(X).
+root_type(X):-
+	bulb(X).
+season(X):-
+	summer(X).
+color(X):-
+	blue(X);
+	purple(X);
+	yellow(X).
+life_type(X):-
+	perennial(X).
+perennial(X):-
+	life_cycle(X).
+life_cycle(X):-
+	more_than_one_year(X).
+
+chrysanthemum(X):-
+	season(X),
+	color(X),
+	height(X).
+season(X):-
+	autumn(X).
+color(X):-
+	yellow(X);
+	white(X);
+	purple(X);
+	red(X).
+height(X):-
+	medium(X).
+medium(X):-
+	size_more_50(X),
+	size_less_150(X).
+
+anemone(X):-
+	season(X),
+	color(X).
+season(X):-
+	autumn(X).
+color(X):-
+	white(X);
+	pink(X);
+	pinkish_red(X).
+
+dahlia(X):-
+	life_type(X),
+	root_type(X),
+	height(X),
+	season(X).
+root_type(X):-
+	bulbs(X).
+season(X):-
+	summer(X).
+height(X):-
+	tall(X).
+tall(X):-
+	size_more_150(X).
+life_type(X):-
+	perennial(X).
+perennial(X):-
+	life_cycle(X).
+life_cycle(X):-
+	more_than_one_year(X).
+
+%%	%%
+freesia(X):-
+	root_type(X),
+	season(X),
+	color(X),
+	perfumed(X).
+season(X):-
+	spring(X).
+root_type(X):-
+	bulbs(X).
+color(X):-
+	white(X);
+	yellow(X);
+	red(X);
+	orange(X);
+	purple(X);
+	blue(X).
+%%	%%
+narcissus(X):-
+	season(X),
+	root_type(X),
+	color(X).
+season(X):-
+	spring(X).
+root_type(X):-
+	bulbs(X).
+color(X):-
+	yellow(X);
+	white(X).
+
+
+%%	%%
+cameuia(X):-
+	soil(X),
+	life_type(X),
+	root_type(X),
+	color(X).
+soil(X):-
+	acidic(X).
+life_type(X):-
+	perennial(X).
+perennial(X):-
+	life_cycle(X).
+life_cycle(X):-
+	more_than_one_year(X).
+root_type(X):-
+	roots(X).
+color(X):-
+	white(X);
+	pink(X);
+	red(X).
+%%	%%
+lily(X):-
+	season(X),
+	root_type(X),
+	perfumed(X),
+	life_type(X),
+	height(X).
+season(X):-
+	spring(X).
+root_type(X):-
+	bulbs(X).
+life_type(X):-
+	perennial(X).
+perennial(X):-
+	life_cycle(X).
+life_cycle(X):-
+	more_than_one_year(X).
+height(X):-
+	small(X).
+%%	%%
+white_lily(X):-
+	lily(X),
+	perfumed(X).
+
+
+helenium(X):-
+	color(X),
+	season(X),
+	soil(X),
+	root_type(X).
+color(X):-
+	orange(X);
+	yellow(X);
+	red(X).
+season(X):-
+	summer(X).
+soil(X):-
+	alluvial_loam(X).
+
+root_type(X):-
+	bulbs(X).
+
+
+violet(X):-
+	color(X),
+	life_type(X),
+	season(X),
+	soil(X).
+color(X):-
+	purple(X).
+life_type(X):-
+	annual(X).
+annual(X):-
+	life_cycle(X).
+life_cycle(X):-
+	one_year(X).
+season(X):-
+	spring(X).
+soil(X):-
+	well_draining(X).
+
+weigela(X):-
+	color(X),
+	season(X),
+	soil(X),
+	height(X).
+
+color(X):-
+	pink(X);
+	red(X).
+season(X):-
+	summer(X).
+soil(X):-
+	dry(X).
+height(X):-
+	tall(X).
+
+sunflower(X):-
+	color(X),
+	height(X),
+	life_type(X).
+color(X):-
+	yellow(X).
+height(X):-
+	tall(X).
+life_type(X):-
+	annual(X).
