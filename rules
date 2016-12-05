@@ -1,0 +1,103 @@
+                        #rules
+*********************************************
+Rule 1: IF size > 10
+ AND size <50
+ THEN height is small
+Rule 2: IF size > 50
+ AND size <150
+ THEN height is medium
+Rule 4: IF size > 150
+ THEN height is tall 
+ Rule 5: IF life cycle is one year
+ THEN life type is annual
+Rule 6: IF life cycle is more than one year
+ THEN life type is perennial
+Rule 7: IF season is summer
+AND color is blue
+OR color is purple
+OR color is yellow
+AND life type is perennial
+AND root type is bulb
+THEN flower name is iris
+Rule 8: IF season is autumn
+AND color is white
+OR color is pink
+OR color is pinkish-red
+THEN flower name is anemone
+Rule 9: IF season is autumn
+AND height is medium
+AND color is yellow
+OR color is while
+OR color is purple
+OR color is red
+THEN flower name is Chrysanthemum
+Rule 10: IF season is spring
+ AND root type is bulbs
+ AND color is white
+ OR color is yellow
+ OR color is orange
+ OR color is purple
+ OR color is red
+ OR color is blue
+ AND perfumed is true
+ THEN flower is Freesia
+Rule 11: IF life type is perennial
+ AND height is tall
+ AND root type is bulbs
+ AND season is summer
+ THEN flower name is Dahlia 
+ Rule 12: IF season is spring
+ AND root type is bulbs
+ AND color is yellow
+ OR color is white
+ THEN flower name is Narcissus
+Rule 13: IF soil is acidic
+ AND color is white
+ OR color is pink
+ OR color is red
+ AND life type is perennial
+ AND root type is roots
+ THEN flower name is Camellia
+Rule 14: IF season is spring
+ AND root type is bulbs
+ AND perfumed is true
+ AND height is small
+ AND life type is perennial
+ THEN flower name is Lily
+Rule 15: IF height is small
+ AND life type is annual
+ AND soil is rich
+ OR soil is loose
+ OR soil is fertile
+ THEN flower name is Begonia
+Rule 16: IF season is winter
+ AND color is white
+ OR color is pink
+ OR color is red
+ THEN flower name is Azalea
+Rule 17: IF life type is perennial
+ AND root type is root
+ AND color is white
+ OR color is red
+ OR color is blue
+ OR color is yellow
+ THEN flower is Anemone
+Rule 18: IF life type is perennial
+ AND root type is roots
+ AND color is white
+ OR color is pink 
+ OR color is red
+ OR color is yellow
+ AND perfumed is true
+ AND soil is well-drained
+ THEN flower is rose
+Rule 19: IF flower name is Lily
+ AND perfumed is true
+ THEN flower name is White lily 
+Rule 20: If color is yellow
+  OR color is red
+  OR color is orange
+  AND season is summer
+  AND soil is alluvial loam
+  AND root type is roots
+  THEN flower is helenium
