@@ -121,7 +121,7 @@ Rule 24: If color is white
  AND root type is bulbs
  AND season is spring
  THEN flower is Tulip 
-Rule 25: If 
- AND 
- AND 
- THEN  
+Rule 25: If color is yellow
+ AND life type is annual
+ AND hight is tall
+ THEN flower is Sunflower 
