@@ -1,9 +1,9 @@
-%ID/ 20130002
-%CF=77
-%CF=65
-%CF=31
-problem :- solve(problem,_).
 
+problem :-
+	writeln('The answers will be Yes and CF :D'),
+	writeln(''),
+	solve(problem,_).
+	
 solve(A, V) :-
 	abolish(fact,2),
 	dynamic(fact/2),
