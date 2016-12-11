@@ -1,3 +1,6 @@
+%=====================%
+%Flowers Expert System%
+%=====================%
 
 %Azales
 rule(1,
@@ -93,8 +96,44 @@ rule(28,
      rhs(av(narcissus_color,yes),50)).
 %lily
 rule(29,
-     lhs([av(spring_season,yes),av(perfumed,yes),av(small_hight,yes)]),
+     lhs([av(spring_season,yes),av(pernnial_lifeType,yes),av(perfumed,yes),av(small_hight,yes)]),
      rhs(av(problem,lily),90)).
+%caminia
+rule(30,
+     lhs([av(acidic_soil,yes),av(pernnial_lifeType,yes),av(caminia_color,yes)]),
+     rhs(av(problem,caminia),75)).
+rule(31,
+     lhs([av(white_color,yes)]),
+     rhs(av(caminia_color,yes),50)).
+rule(32,
+     lhs([av(pink_color,yes)]),
+     rhs(av(caminia_color,yes),50)).
+rule(33,
+     lhs([av(red_color,yes)]),
+     rhs(av(caminia_color,yes),50)).
+%freesia
+rule(34,
+     lhs([av(spring_season,yes),av(perfumed,yes),av(freesia_color,yes)]),
+     rhs(av(problem,freesia),100)).
+rule(35,
+     lhs([av(red_color,yes)]),
+     rhs(av(freesia_color,yes),50)).
+rule(36,
+     lhs([av(orange_color,yes)]),
+     rhs(av(freesia_color,yes),50)).
+rule(37,
+     lhs([av(pink_color,yes)]),
+     rhs(av(freesia_color,yes),50)).
+%begonia
+rule(38,
+     lhs([av(small_hight,yes),av(begonia_soil,yes),av(annual_lifeType,yes)]),
+     rhs(av(problem,begonia),85)).
+rule(39,
+     lhs([av(rich_soil,yes)]),
+     rhs(av(begonia_soil,yes),70)).
+rule(40,
+     lhs([av(loose_soil,yes)]),
+     rhs(av(begonia_soil,yes),70)).
 
 
 
@@ -108,10 +147,14 @@ askable(pink_color, 'is this flower color(pink)?').
 askable(yellow_color, 'is this flower color(yellow)?').
 askable(blue_color, 'is this flower color(blue)?').
 askable(purple_color, 'is this flower color(purple)?').
-askable(pernnial_lifeType, 'is this floower perennial?').
-askable(annual_lifeType, 'is this floower annual?').
+askable(orange_color, 'is this flower color(orange)?').
+askable(pernnial_lifeType, 'is this flower that life more than one year?').
+askable(annual_lifeType, 'is this flower that life one year?').
 askable(perfumed, 'is this flower perfumed?').
 askable(well_drained_soil, 'is the soil of this flower well drained?').
+askable(acidic_soil, 'is the soil of this flower acidic soil?').
+askable(rich_soil, 'is the soil of this flower rich soil?').
+askable(loose_soil, 'is the soil of this flower loose soil?').
 askable(meduim_hight,'is this flower  medium?').
 askable(small_hight,'is this flower  small?').
 askable(tall_hight,'is this flower  tall?').
